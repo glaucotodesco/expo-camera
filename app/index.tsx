@@ -3,7 +3,7 @@ import { View, Button, Image, FlatList, Alert } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 import { Camera } from 'expo-camera';
 
-const Index = () => {
+const CameraGalleryApp = () => {
   const [images, setImages] = useState<string[]>([]);
   const [hasCameraPermission, setHasCameraPermission] = useState<boolean | null>(null);
   const [hasGalleryPermission, setHasGalleryPermission] = useState<boolean | null>(null);
@@ -69,4 +69,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default CameraGalleryApp;
